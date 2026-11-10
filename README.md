@@ -1,5 +1,7 @@
 # Interactive Handwritten Digit Recognition Web Application
 
+> 🌐 **Live Web Application Demo:** [https://interactive-handwritten-digit.onrender.com/](https://interactive-handwritten-digit.onrender.com/)
+
 A modern, responsive deep learning web application for handwritten digit recognition ($0 - 9$) powered by a trained PyTorch neural network.
 
 The web application features an interactive HTML5 drawing canvas with multi-touch, mouse, and stylus support, real-time center-of-mass image preprocessing adhering strictly to the official MNIST specification, and an asynchronous Flask REST API delivering prediction confidence and full 10-class probability distributions.
@@ -115,6 +117,11 @@ python app.py
 ### Option B: Production WSGI Server (Gunicorn)
 ```bash
 gunicorn -w 2 -b 127.0.0.1:5000 app:app
+```
+
+### Option C: Streamlit Interface
+```bash
+streamlit run streamlit_app.py
 ```
 
 The application will start on:
